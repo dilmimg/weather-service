@@ -1,0 +1,25 @@
+
+<div class="container-fluid">
+  <h1 class="text-primary text-center">Weather Service</h1>
+  <div class="py-3"></div>
+  <div *ngIf="isError" class="alert alert-warning" role="alert">Weather service is unavailable now. Please try again later.</div>
+  <ng-container *ngIf="cityTemperatures && cityTemperatures.length > 0">
+      <div class="body-padding table-responsive-sm">
+          <table class="table table-striped">
+              <thead>
+                  <tr>
+                    <th scope="col">City</th>
+                    <th scope="col">Temperature</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr *ngFor="let cityTemp of cityTemperatures">
+                    <td scope="row">{{cityTemp.name}}</td>
+                    <td>{{cityTemp.temperature}}</td>
+                  </tr>
+                </tbody>
+          </table>
+        </div>
+  </ng-container>
+</div>
+

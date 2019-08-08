@@ -1,0 +1,13 @@
+@import '~bootstrap/dist/css/bootstrap.min.css';
+@import "~bootstrap/scss/bootstrap.scss";
+@import "~bootstrap/scss/mixins/_breakpoints.scss";
+
+html, body {
+    background: #F5F6F7;
+  }
+
+@include media-breakpoint-up(xl) { 
+.body-padding {
+        padding: 0 20%;
+ }
+}
