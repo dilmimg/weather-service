@@ -9,13 +9,13 @@ A simple weather service application
 ## API
 Spring Boot API bootstrapped by [Spring Initializr](https://start.spring.io/)
 
-Inside the api directory, you can run some built-in commands:
+Inside the api directory, you can run:
 
-`./gradlew bootRun or gradlew.bat bootRun`
-Runs the api locally. Open http://localhost:8080 to view it in the browser.
+`mvn clean install`
+to generate the .war file which can be deployed in Apache Tomcat. Open http://localhost:8080 to view it in the browser.
 
-*Tip* you will need to enable CORS in order for your Client to communicate with the API
-[Spring Rest CORS](https://spring.io/guides/gs/rest-service-cors/)
+*Tip* CORS is enabled in the client using webpack proxy in order for the client to communicate with the API.
+'target' url in proxy.conf.json file in the angular client can be modified if you want to change the default api url.
 
 
 ## Client
@@ -24,6 +24,6 @@ Angular frontend client.
 Inside the client directory, you can run some built-in commands:
 
 `npm start`
-Runs the app in development mode. Open http://localhost:4200/to view it in the browser.
+to run the app in development mode. Open http://localhost:4200 to view it in the browser.
 
 The page will automatically reload if you make changes to the code. You will see the build errors and lint warnings in the console.
