@@ -14,5 +14,4 @@ This project is generated using Spring Boot 2.1.6, Java 1.8, Maven 3+ and H2 in-
 Unit tests are implemented.
 
 ## To be implemented
-Integration tests
-Logging
+Integration tests and logging
