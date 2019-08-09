@@ -6,7 +6,7 @@ A simple weather service application
 * [NodeJS](https://nodejs.org/en/) 10 or higher
 * NPM
 
-## API
+## API (weatherservice)
 Spring Boot API bootstrapped by [Spring Initializr](https://start.spring.io/)
 
 Inside the api directory, you can run:
@@ -18,7 +18,7 @@ to generate the .war file which can be deployed in Apache Tomcat. Open http://lo
 'target' url in proxy.conf.json file in the angular client can be modified if you want to change the default api url.
 
 
-## Client
+## Client (weatherapp)
 Angular frontend client.
 
 Inside the client directory, you can run some built-in commands:
